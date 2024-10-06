@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+    color: #00ff00;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.terminal {
+    text-align: left;
+    width: 80%;
+}
+
+.hidden {
+    display: none;
+}
+
+.reveal {
+    display: block;
+}
+
+.cursor {
+    border-left: 2px solid #00ff00;
+    animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
